@@ -1,3 +1,4 @@
+from matplotlib import pyplot as plt
 import numpy as np
 import cv2
 
@@ -28,3 +29,13 @@ def resize(image, width=None, height=None, inter=cv2.INTER_AREA):
         dim = (width, int(h*r))
     resized = cv2.resize(image, dim, interpolation=inter)
     return resized
+
+def plot_histogram(image, title, mask = None):
+    chans = cv2.split(image)
+    colors = ('b', 'g', 'r')
+    fig, ax = plt.subplots(figsize=(10, 5))
+    ax.set(title=title, xlabel='Bins', ylabel='# of Pixels', xlim=[0, 256]);
+    for (chan, color) in zip(chans, colors):
+        hist = cv2.calcHist([chan], [0], mask, [256], [0, 256])
+        ax.plot(hist, color=color)
+
