@@ -39,3 +39,11 @@ def plot_histogram(image, title, mask = None):
         hist = cv2.calcHist([chan], [0], mask, [256], [0, 256])
         ax.plot(hist, color=color)
 
+def auto_canny(image, sigma=0.33):
+    v = np.median(image)
+    lower = int(max(0, (1.0 - sigma) * v))
+    upper = int(min(255, (1.0 + sigma) * v))
+    edged = cv2.Canny(image, lower, upper)
+    return edged
+
+
