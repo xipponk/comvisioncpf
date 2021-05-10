@@ -1,0 +1,58 @@
+Matplotlib_basic.ipynb
+BasicOperation.ipynb
+Padding.ipynb
+
+Color spaces - ColorSpaces.ipynb
+
+Image transformation
+	- Translation.ipynb
+	- imutils.py
+	- Rotate.ipynb
+	- Resize.ipynb
+	- Flip.ipynb
+	- CropImage.ipynb
+
+Image arithmatic - 	arithmatic.ipynb
+Bitwise operation -	Bitwise.ipynb
+Masking - Masking.ipynb
+Spliting and Merging - SplitingMerging.ipynb
+
+Histogram
+	- GrayScale_Histogram.ipynb
+	- Color_Histogram.ipynb
+	- Equalize_Histogram.ipynb
+	- Mask_Histogram.ipynb
+
+
+Convolution operator
+Smooth and Blurring
+	- blurring.ipynb
+	
+
+
+2D Discrete Fourier Transform
+	- DFT_Numpy.ipynb
+	- DFT_CV2.ipynb
+
+#################################################
+
+Thresholding
+	- Simple_Thresholding.ipynb
+	- Adaptive_Thresholding.ipynb
+	- OtsuRiddle_Thresholding.ipynb
+
+Gradients and Edge Detection
+	- EdgeDetect_Laplacian.ipynb
+	- EdgeDetect_Sobel.ipynb
+	- EdgeDetect_Canny.ipynb
+	- EdgeDetect_CannyAuto.ipynb
+
+Contours
+	- Contour_CountingCoins.ipynb
+
+Distance Transform and Watershed Segmentation
+Watershed Segmentation
+
+Morphological Operation
+
+Template Matching
